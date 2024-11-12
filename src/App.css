@@ -1,0 +1,635 @@
+/*************************************** Assessment Page CSS  ****************************************************/
+
+.assessment-page {
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button,
+  .add-button {
+    margin: 15px 0;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover,
+  .add-button:hover {
+    background-color: #0055a5;
+    color: #fff;
+  }
+  
+  :root select-job {
+    font-weight: bold;
+    top: -15px;
+    font-size: 1.3rem;
+  }
+  
+  .MuiInputLabel-root {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .MuiSelect-root {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .text-field {
+    margin-bottom: 15px;
+  }
+  
+  .text-field .MuiInputBase-root {
+    border: 1px solid #4a90e2;
+    border-radius: 20px;
+    padding: 3px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .text-field .MuiInputBase-root:hover {
+    border-color: #003d7a;
+  }
+  
+  .text-field label {
+    color: #666;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .questions-list {
+    margin-top: 30px;
+  }
+  
+  .questions-list h3 {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .question-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .question-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .options-list li {
+    padding: 6px 0;
+    font-size: 0.95rem;
+  }
+  
+  .correct-answer {
+    color: #00796b;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #e1f0ff;
+    color: #1976d2;
+  }
+  
+  .delete-button:hover {
+    background-color: #ffe1e1;
+    color: #d32f2f;
+  }
+  
+  .no-questions {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0055a5;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+ 
+
+
+
+
+/*************************************** Dashboard Page CSS  ****************************************************/
+
+.dashboard-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+ 
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .add-job-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0055a5;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-job-button:hover {
+    background-color: #003d7a;
+  }
+  
+  .job-list {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .job-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-info {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .icon-button {
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .candidate-list {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .candidate-item {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .add-job-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0055a5;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-job-button:hover {
+    background-color: #003d7a;
+  }
+  
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .job-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .job-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .job-description::before {
+    content: "Description: ";
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .candidate-count {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon-button:active .icon {
+    transform: scale(1.2);
+  }
+  
+  .icon-button:active .icon-label {
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  .icon-label {
+    font-size: 0.9rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+    
+  }
+  
+  .add-job-button {
+    margin-left: auto;
+  }
+  
+  .apply-job-button {
+    margin-left: auto;
+    float: right;
+    padding: 10px 20px;
+    background-color: #0055a5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-job-button:hover {
+    background-color: #003d7a;
+  }
+  
+
+
+  
+/*************************************** Candidate Page CSS  ****************************************************/
+
+.candidates-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .candidates-title {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .candidate-list {
+    padding: 10px;
+  }
+  
+  .candidate-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view-details-button {
+    color: #0055a5;
+    border-color: #0055a5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #0055a5;
+    color: #fff;
+  }
+  
+  .candidate-dialog .MuiDialogTitle-root {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .candidate-detail-input {
+    margin-bottom: 15px;
+  }
+  
+  .dialog-actions-button {
+    font-weight: bold;
+    color: #0055a5;
+  }
+  
+  .dialog-actions-button:hover {
+    background-color: #0055a5;
+    color: #fff;
+  }
+  
+
+
+  /* Candidate section  */
+
+
+  /* src/styles/Candidates.css */
+
+.candidates-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .candidates-title {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .candidate-list {
+    padding: 10px;
+  }
+  
+  .candidate-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view-details-button {
+    color: #0055a5;
+    border-color: #0055a5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #0055a5;
+    color: #fff;
+  }
+  
+  .candidate-dialog .MuiDialogTitle-root {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .candidate-detail-input {
+    margin-bottom: 15px;
+  }
+  
+  .dialog-actions-button {
+    font-weight: bold;
+    color: #0055a5;
+  }
+  
+  .dialog-actions-button:hover {
+    background-color: #0055a5;
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+/* src/App.css */
+
+body {
+    /* background-image: url('./IMG_1398.JPG'); Replace with the actual path to your image */
+    background-size: cover;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,38,143,1) 61%, rgba(0,212,255,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* max-width: 100vw; */
+    padding: 20px;
+    /* width: 100vw; */
+    color: #ffffff; /* Adjust text color for better visibility */
+  }
+  
+  /* Other CSS for button alignment */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-job-button {
+    padding: 10px 20px;
+    background-color: #0055a5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch-job-section-button {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-job-button:hover,
+  .switch-job-section-button:hover {
+    background-color: #003d7a;
+  }
+
+  /* JObApplication CSS for button alignment */
+
+  /* src/App.css */
+
+.job-application-container {
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.job-application-title {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-list {
+  color: white;
+}
+
+.job-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #e8dcdc;
+}
+
+.job-text {
+  font-size: 1.2rem;
+  /* color: white; */
+}
+
+.job-app-main {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-app {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* justify-content: space-around; */
+}
+
+.apply-button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 2px solid #00ffff;
+  color: #4d064d;
+  background-color: #4d064d;
+  transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color:#810e81;
+  color: #fff;
+}
+
+.dialog-title {
+  color: #f6f8fb;
+  font-size: 1.5rem;
+}
+
