@@ -347,6 +347,11 @@
     font-size: 0.9rem;
   }
   
+  .question {
+    color: black;
+    font-weight: bold;
+  }
+
   .button-group {
     display: flex;
     justify-content: space-between;

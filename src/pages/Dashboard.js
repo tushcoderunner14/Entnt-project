@@ -69,6 +69,11 @@ const Dashboard = () => {
     navigate('/jobapp'); // Navigate to Candidates section
   };
 
+  const handleSave = () => {
+    setJobs(jobs.map(job => job.id === jobToEdit.id ? jobToEdit : job))
+    setOpenEditDialog(false)
+  }
+ 
   return (
     <div className="dashboard-container">
       <h1 className="dashboard-title">Admin Dashboard</h1>
@@ -198,7 +203,7 @@ const Dashboard = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpenEditDialog(false)} color="primary">Cancel</Button>
-          <Button onClick={() => setJobs(jobs.map(job => job.id === jobToEdit.id ? jobToEdit : job))} color="primary">Save</Button>
+          <Button onClick={handleSave} color="primary">Save</Button>
         </DialogActions>
       </Dialog>
 

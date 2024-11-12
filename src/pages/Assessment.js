@@ -85,6 +85,8 @@ const AssessmentPage = () => {
     navigate('/');
   };
 
+  console.log(jobQuestions);
+  
   return (
     <div className="assessment-page">
       <Button
@@ -155,7 +157,7 @@ const AssessmentPage = () => {
         {jobQuestions.length > 0 ? (
           jobQuestions.map((q, index) => (
             <div key={index} className="question-item">
-              <p>{q.question}</p>
+              <p className='question'>{q.question}</p>
               <ul className="options-list">
                 {Object.keys(q.options).map((key) => (
                   <li key={key}>{`${key.slice(-1)}: ${q.options[key]}`}</li>
