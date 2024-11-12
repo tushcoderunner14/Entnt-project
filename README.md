@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Job Portal
+## Overview
+This project is a React application built using Create React App. It includes features such as a job application system, resume upload, candidate tracking, and assessments. The application saves job and candidate data to localStorage for persistence.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
+Job listing with descriptions
+Candidate application with resume upload
+Candidate tracking per job
+Assessment questions for candidates
+Data persistence via localStorage
 
-## Available Scripts
+### Getting Started
+Follow these instructions to set up and run the project locally.
 
-In the project directory, you can run:
+### Prerequisites
+Ensure you have the following installed:
 
-### `npm start`
+Node.js (version 14 or later): Download Node.js
+npm (comes with Node.js) or yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
+Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+git clone https://github.com/tushcoderunner14/Entnt-project
+cd Entnt-project
 
-### `npm test`
+### Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm install
+or, if you’re using yarn:
 
-### `npm run build`
+bash
+Copy code
+yarn install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the Application
+To start the application in development mode:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+or
 
-### `npm run eject`
+bash
+Copy code
+yarn start
+This will open the app at http://localhost:3000 in your browser. 
+The page will reload automatically as you edit the code, and any linting errors will appear in the console.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Building the Application
+To build the application for production:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+npm run build
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+yarn build
+This command bundles the application in the build directory, optimized for performance.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
+Once the app is running, you can:
 
-## Learn More
+View available job listings.
+Apply to jobs by entering your name, email, and uploading a resume.
+View candidate lists for each job.
+Sample Data
+To populate the app with sample data for demonstration purposes, add the following function in index.js or your main entry file:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  const sampleJobs = [
+    {  title: 'Software Engineer', description: 'Develop software solutions.' },
+    {  title: 'Product Manager', description: 'Oversee product development.' }
+  ];
 
-### Code Splitting
+  const sampleCandidates = [
+    { name: 'Alice', email: 'alice@example.com', Resume: Pdf file,  status: 'Under Review' },
+    { name: 'Bob', email: 'bob@example.com',  Resume: Pdf file, status: 'Interview Scheduled' }
+  ];
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  const sampleAssignment = [
+  { selectJob: 'Front-end Developer', Question: 'What are you most proficiant in?', option1: 'React', option2: 'Next', option3: 'Angular', option4: 'React Native', status: 'Under Review' },
+];
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built With
+React: JavaScript library for building user interfaces.
+Material-UI: UI components library.
+react-toastify: Library for notifications and user feedback.
+localStorage: Browser storage for persisting job and candidate data.
+License
